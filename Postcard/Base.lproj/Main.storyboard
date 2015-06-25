@@ -56,6 +56,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ERh-uG-U5c"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Nhj-2o-5X4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="m5K-9C-O4m">
@@ -95,13 +96,22 @@
                                     <action selector="sendMailButtonPressed:" destination="hRy-gO-m7x" eventType="touchUpInside" id="vlX-sP-9FF"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECR-Oe-ywY">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="22" y="149" width="220" height="21"/>
+                                </variation>
+                            </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAW-QR-7b0">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="22" y="85" width="220" height="80"/>
+                                    <rect key="frame" x="22" y="72" width="220" height="80"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -112,6 +122,7 @@
                                 <exclude reference="G57-cv-AsR"/>
                                 <exclude reference="7d3-mr-LkH"/>
                                 <exclude reference="WmS-ce-MgM"/>
+                                <exclude reference="ECR-Oe-ywY"/>
                                 <exclude reference="oAW-QR-7b0"/>
                             </mask>
                         </variation>
@@ -121,6 +132,7 @@
                                 <include reference="G57-cv-AsR"/>
                                 <include reference="7d3-mr-LkH"/>
                                 <include reference="WmS-ce-MgM"/>
+                                <include reference="ECR-Oe-ywY"/>
                                 <include reference="oAW-QR-7b0"/>
                             </mask>
                         </variation>
@@ -130,6 +142,7 @@
                         <outlet property="enterNameTextField" destination="G57-cv-AsR" id="hvj-Vs-RbC"/>
                         <outlet property="mailButton" destination="WmS-ce-MgM" id="BiH-BU-N0Z"/>
                         <outlet property="messageLabel" destination="oAW-QR-7b0" id="wac-l2-f6B"/>
+                        <outlet property="nameLabel" destination="ECR-Oe-ywY" id="pJ6-VX-5gX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G5g-02-3KX" userLabel="First Responder" sceneMemberID="firstResponder"/>
